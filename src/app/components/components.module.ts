@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 import { SlidesComponent } from './slides/slides.component';
 import { StartComponent } from './start/start.component';
 import { LogoComponent } from './logo/logo.component';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
+import { HomeRouter } from '../home/home.router';
 
 
 
 @NgModule({
   declarations: [SlidesComponent,StartComponent,LogoComponent],
-  exports:[],
-  imports: [
-    CommonModule
-  ]
+  exports:[SlidesComponent,StartComponent,LogoComponent],
+  imports: [CommonModule ],
 })
 export class ComponentsModule { }

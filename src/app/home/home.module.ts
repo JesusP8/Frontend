@@ -10,12 +10,7 @@ import { HomePage } from './home.page';
 import { HomeRouter } from './home.router';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomeRouter
-  ],
+  imports: [CommonModule, FormsModule,IonicModule, HomeRouter ],
   declarations: [HomePage]
 })
 export class HomePageModule {}

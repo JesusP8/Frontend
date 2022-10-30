@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form [formGroup]="formularioLogin">
 
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input formControlName="username"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Clave</ion-label>
+          <ion-input formControlName="clave" type="password"></ion-input> 
+        </ion-item>
+
+        <ion-item>
+          No tienes una cuenta? <a routerLink="/signup">Crear cuenta</a>
+          
+      
+        </ion-item>
+        <ion-item>
+          No quiero logearme <a routerLink="/home/feed">No logearse</a>
+        </ion-item>
+
+
+        <ion-button (click)="ingresar()">Ingresar</ion-button>
+
+    </ion-list>
+  </form>
 </ion-content>
