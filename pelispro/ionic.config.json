@@ -1,0 +1,7 @@
+{
+  "name": "pelispro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
