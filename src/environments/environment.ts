@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl : 'http://localhost8084/'
+  apiKey: 'a97243d7813d31446f6c43284e6854d5', // <-- Enter your own key here!'
+  baseUrl: 'https://api.themoviedb.org/3',
+  images: 'http://image.tmdb.org/t/p',
 };
 
 /*
