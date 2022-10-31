@@ -6,6 +6,7 @@ import { IndexPage } from './index.page';
 const routes: Routes = [
   {
     path: '',
+    component: IndexPage,
     children: [
         {
             path:'',
