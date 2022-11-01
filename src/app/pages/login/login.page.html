@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+  <div class="center">
+    <h1>Registrarse</h1>
+  </div>
+  <form>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Clave</ion-label>
+          <ion-input type="password"></ion-input> 
+        </ion-item>
+
+        <ion-item>
+          No tienes una cuenta? <a routerLink="/signup">Crear cuenta</a>
+          
+        </ion-item>
+
+        <ion-item>
+          No quiero logearme <a routerLink="/movies">No logearse</a>
+        </ion-item>
+
+
+        <ion-button expand="block" share="round" color="success" (click)="ingresar()">Ingresar</ion-button>
+
+    </ion-list>
+  </form>
+</ion-content>
